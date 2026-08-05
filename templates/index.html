@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Malaria / Typhoid Diagnosis Support</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="app">
+    <h1>Malaria &amp; Typhoid Fever — Diagnosis Support</h1>
+    <div class="progress"><div id="progressFill" class="progress-fill"></div></div>
+
+    <div id="mainPanel" class="panel"></div>
+
+    <div class="ledger">
+      <h3>Fact Ledger</h3>
+      <div id="ledgerBody"></div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
